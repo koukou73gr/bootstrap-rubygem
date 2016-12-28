@@ -3,41 +3,40 @@
 
 // Table of Contents
 //
-//  1. Colors
-//  2. Options
-//  3. Spacing
-//  4. Body
-//  5. Links
-//  6. Grid breakpoints
-//  7. Grid containers
-//  8. Grid columns
-//  9. Fonts
-// 10. Components
-// 11. Tables
-// 12. Buttons
-// 13. Forms
-// 14. Dropdowns
-// 15. Z-index master list
-// 16. Navbar
-// 17. Navs
-// 18. Pagination
-// 19. Jumbotron
-// 20. Form states and alerts
-// 21. Cards
-// 22. Tooltips
-// 23. Popovers
-// 24. Badges
-// 25. Modals
-// 26. Alerts
-// 27. Progress bars
-// 28. List group
-// 29. Image thumbnails
-// 30. Figures
-// 31. Breadcrumbs
-// 32. Media objects
-// 33. Carousel
-// 34. Close
-// 35. Code
+// Colors
+// Options
+// Spacing
+// Body
+// Links
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+// Tables
+// Buttons
+// Forms
+// Dropdowns
+// Z-index master list
+// Navbar
+// Navs
+// Pagination
+// Jumbotron
+// Form states and alerts
+// Cards
+// Tooltips
+// Popovers
+// Badges
+// Modals
+// Alerts
+// Progress bars
+// List group
+// Image thumbnails
+// Figures
+// Breadcrumbs
+// Carousel
+// Close
+// Code
 
 
 // Replace `$search` with `$replace` in `$string`
@@ -70,7 +69,7 @@
 // Variable format should follow the `$component-modifier-state-property` order.
 
 
-// 1. Colors
+// Colors
 //
 // Grayscale and brand colors for use across Bootstrap.
 
@@ -102,7 +101,7 @@
 // $brand-inverse:             $gray-dark;
 
 
-// 2. Options
+// Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
@@ -115,7 +114,7 @@
 // $enable-print-styles:       true;
 
 
-// 3. Spacing
+// Spacing
 //
 // Control the default styling of most Bootstrap elements by modifying these
 // variables. Mostly focused on spacing.
@@ -152,8 +151,15 @@
 // );
 // $border-width: 1px;
 
+// This variable affects the `.h-*` and `.w-*` classes.
+// $sizes: (
+//   25: 25%,
+//   50: 50%,
+//   75: 75%,
+//   100: 100%
+// );
 
-// 4. Body
+// Body
 //
 // Settings for the `<body>` element.
 
@@ -163,7 +169,7 @@
 // $inverse-color: $gray-lighter;
 
 
-// 5. Links
+// Links
 //
 // Style anchor elements.
 
@@ -173,7 +179,7 @@
 // $link-hover-decoration: underline;
 
 
-// 6. Grid breakpoints
+// Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
@@ -188,7 +194,7 @@
 @include _assert-starts-at-zero($grid-breakpoints);
 
 
-// 7. Grid containers
+// Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
 
@@ -200,7 +206,7 @@
 // );
 
 
-// 8. Grid columns
+// Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
 
@@ -214,7 +220,7 @@
 //   xl: $grid-gutter-width-base
 // );
 
-// 9. Fonts
+// Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
 
@@ -287,7 +293,7 @@
 // $list-inline-padding: 5px;
 
 
-// 10. Components
+// Components
 //
 // Define common padding and border radius sizes and more.
 
@@ -309,7 +315,7 @@
 // $transition-collapse:    height .35s ease;
 
 
-// 11. Tables
+// Tables
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
@@ -332,7 +338,7 @@
 // $table-border-color:            $gray-lighter;
 
 
-// 12. Buttons
+// Buttons
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
@@ -386,7 +392,7 @@
 // $btn-transition:                 all .2s ease-in-out;
 
 
-// 13. Forms
+// Forms
 
 // $input-padding-x:                .75rem;
 // $input-padding-y:                .5rem;
@@ -423,6 +429,16 @@
 
 // $input-transition:               border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
+// $form-text-margin-top:     .25rem;
+// $form-feedback-margin-top: $form-text-margin-top;
+
+// $form-check-margin-bottom:  .5rem;
+// $form-check-input-gutter:   1.25rem;
+// $form-check-input-margin-y: .25rem;
+// $form-check-input-margin-x: .25rem;
+
+// $form-check-inline-margin-x: .75rem;
+
 // $form-group-margin-bottom:       $spacer-y;
 
 // $input-group-addon-bg:           $gray-lighter;
@@ -435,6 +451,7 @@
 // $custom-control-spacer-y: .25rem;
 
 // $custom-control-indicator-size:       1rem;
+// $custom-control-indicator-margin-y:   (($line-height-base * 1rem) - $custom-control-indicator-size) / -2;
 // $custom-control-indicator-bg:         #ddd;
 // $custom-control-indicator-bg-size:    50% 50%;
 // $custom-control-indicator-box-shadow: inset 0 .25rem .25rem rgba($black,.1);
@@ -447,7 +464,7 @@
 // $custom-control-checked-indicator-bg:         $brand-primary;
 // $custom-control-checked-indicator-box-shadow: none;
 
-// $custom-control-focus-indicator-box-shadow: 0 0 0 .075rem $body-bg, 0 0 0 .2rem $brand-primary;
+// $custom-control-focus-indicator-box-shadow: 0 0 0 1px $body-bg, 0 0 0 3px $brand-primary;
 
 // $custom-control-active-indicator-color:      $white;
 // $custom-control-active-indicator-bg:         lighten($brand-primary, 35%);
@@ -467,6 +484,7 @@
 // $custom-select-padding-x:          .75rem ;
 // $custom-select-padding-y:          .375rem;
 // $custom-select-indicator-padding:   1rem; // Extra padding to account for the presence of the background-image based indicator
+// $custom-select-line-height:         $input-line-height;
 // $custom-select-color:               $input-color;
 // $custom-select-disabled-color:      $gray-light;
 // $custom-select-bg:            $white;
@@ -520,7 +538,7 @@
 // $form-icon-danger: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$form-icon-danger-color}' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E"), "#", "%23");
 
 
-// 14. Dropdowns
+// Dropdowns
 //
 // Dropdown menu container and contents.
 
@@ -547,7 +565,7 @@
 // $dropdown-header-color:          $gray-light;
 
 
-// 15. Z-index master list
+// Z-index master list
 //
 // Warning: Avoid customizing these values. They're used for a bird's eye view
 // of components dependent on the z-axis and are designed to all work together.
@@ -563,7 +581,7 @@
 // $zindex-tooltip:           1070;
 
 
-// 16. Navbar
+// Navbar
 
 // $navbar-border-radius:              $border-radius;
 // $navbar-padding-x:                  $spacer;
@@ -617,7 +635,7 @@
 // $nav-pills-active-link-bg:    $component-active-bg;
 
 
-// 18. Pagination
+// Pagination
 
 // $pagination-padding-x:                .75rem;
 // $pagination-padding-y:                .5rem;
@@ -645,13 +663,13 @@
 // $pagination-disabled-border:           #ddd;
 
 
-// 19. Jumbotron
+// Jumbotron
 
 // $jumbotron-padding:              2rem;
 // $jumbotron-bg:                   $gray-lighter;
 
 
-// 20. Form states and alerts
+// Form states and alerts
 //
 // Define colors for form feedback states and, by default, alerts.
 
@@ -673,7 +691,7 @@
 // $state-danger-border:            darken($state-danger-bg, 5%);
 
 
-// 21. Cards
+// Cards
 
 // $card-spacer-x:            1.25rem;
 // $card-spacer-y:            .75rem;
@@ -695,7 +713,7 @@
 // $card-columns-margin:       $card-spacer-y;
 
 
-// 22. Tooltips
+// Tooltips
 
 // $tooltip-max-width:           200px;
 // $tooltip-color:               $white;
@@ -709,7 +727,7 @@
 // $tooltip-arrow-color:         $tooltip-bg;
 
 
-// 23. Popovers
+// Popovers
 
 // $popover-inner-padding:               1px;
 // $popover-bg:                          $white;
@@ -732,7 +750,7 @@
 // $popover-arrow-outer-color:           fade-in($popover-border-color, .05);
 
 
-// 24. Badges
+// Badges
 
 // $badge-default-bg:            $gray-light;
 // $badge-primary-bg:            $brand-primary;
@@ -754,7 +772,7 @@
 // $badge-pill-border-radius:    10rem;
 
 
-// 25. Modals
+// Modals
 
 // Padding applied to the modal body
 // $modal-inner-padding:         15px;
@@ -772,7 +790,7 @@
 
 // $modal-backdrop-bg:           $black;
 // $modal-backdrop-opacity:      .5;
-// $modal-header-border-color:   $gray-lightest;
+// $modal-header-border-color:   $gray-lighter;
 // $modal-footer-border-color:   $modal-header-border-color;
 // $modal-header-border-width:   $modal-content-border-width;
 // $modal-footer-border-width:   $modal-header-border-width;
@@ -785,7 +803,7 @@
 // $modal-transition:            transform .3s ease-out;
 
 
-// 26. Alerts
+// Alerts
 //
 // Define alert colors, border radius, and padding.
 
@@ -813,7 +831,7 @@
 // $alert-danger-border:         $state-danger-border;
 
 
-// 27. Progress bars
+// Progress bars
 
 // $progress-bg:                 $gray-lighter;
 // $progress-bar-color:          $brand-primary;
@@ -827,7 +845,7 @@
 // $progress-bar-info-bg:        $brand-info;
 
 
-// 28. List group
+// List group
 
 // $list-group-bg:                 $white;
 // $list-group-border-color:       rgba($black,.125);
@@ -853,7 +871,7 @@
 // $list-group-item-heading-margin-bottom: 5px;
 
 
-// 29. Image thumbnails
+// Image thumbnails
 
 // $thumbnail-padding:           .25rem;
 // $thumbnail-bg:                $body-bg;
@@ -864,13 +882,13 @@
 // $thumbnail-transition:        all .2s ease-in-out;
 
 
-// 30. Figures
+// Figures
 
 // $figure-caption-font-size: 90%;
 // $figure-caption-color:     $gray-light;
 
 
-// 31. Breadcrumbs
+// Breadcrumbs
 
 // $breadcrumb-padding-y:          .75rem;
 // $breadcrumb-padding-x:          1rem;
@@ -882,14 +900,7 @@
 // $breadcrumb-divider:            "/";
 
 
-// 32. Media objects
-
-// $media-margin-top:            15px;
-// $media-heading-margin-bottom:  5px;
-// $media-alignment-padding-x:   10px;
-
-
-// 33. Carousel
+// Carousel
 
 // $carousel-control-color:                      $white;
 // $carousel-control-width:                      15%;
@@ -911,14 +922,14 @@
 // $carousel-transition:           transform .6s ease-in-out;
 
 
-// 34. Close
+// Close
 
 // $close-font-weight:           $font-weight-bold;
 // $close-color:                 $black;
 // $close-text-shadow:           0 1px 0 $white;
 
 
-// 35. Code
+// Code
 
 // $code-font-size:              90%;
 // $code-padding-x:              .4rem;
